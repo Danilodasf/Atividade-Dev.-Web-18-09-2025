@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css';
 
-// URL base do Beeceptor - substitua 'your-endpoint' pelo seu endpoint personalizado
-const API_BASE_URL = 'https://your-endpoint.free.beeceptor.com';
+// URL base da API
+const API_BASE_URL = 'https://projeto-dev-web.free.beeceptor.com';
 
 function App() {
   // Estados para armazenar dados e controlar a interface
@@ -247,18 +247,9 @@ function App() {
   return (
     <div className="container">
       <h1>Demonstração de Métodos HTTP</h1>
-      <p>React + Fetch + Axios + Beeceptor</p>
+      <p>React + Fetch + Axios</p>
       
-      {/* Instruções para configurar Beeceptor */}
-      <div className="instructions">
-        <h3>📋 Instruções:</h3>
-        <ol>
-          <li>Acesse <a href="https://beeceptor.com" target="_blank" rel="noopener noreferrer">beeceptor.com</a></li>
-          <li>Crie um endpoint personalizado (ex: meu-teste.free.beeceptor.com)</li>
-          <li>Substitua 'your-endpoint' na constante API_BASE_URL no código</li>
-          <li>Teste os métodos HTTP abaixo!</li>
-        </ol>
-      </div>
+
 
       {loading && <div className="loading">Carregando...</div>}
 

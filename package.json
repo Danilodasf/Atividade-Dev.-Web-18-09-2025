@@ -1,7 +1,7 @@
 {
   "name": "react-api-methods-demo",
   "version": "1.0.0",
-  "description": "Aplicação React demonstrando métodos HTTP com Fetch e Axios usando Beeceptor",
+  "description": "Aplicação React demonstrando métodos HTTP com Fetch e Axios",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",

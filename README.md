@@ -1,13 +1,13 @@
 # Demonstração de Métodos HTTP com React
 
-Esta aplicação demonstra o uso de todos os métodos HTTP (GET, POST, PUT, PATCH, DELETE) utilizando tanto **Fetch API** quanto **Axios** com **Beeceptor** como API mock.
+Esta aplicação demonstra o uso de todos os métodos HTTP (GET, POST, PUT, PATCH, DELETE) utilizando tanto **Fetch API** quanto **Axios** com uma API mock configurada.
 
 ## 🚀 Tecnologias Utilizadas
 
 - **React 18** - Biblioteca para construção da interface
 - **Fetch API** - API nativa do JavaScript para requisições HTTP
 - **Axios** - Biblioteca popular para requisições HTTP
-- **Beeceptor** - Serviço para criar APIs mock rapidamente
+- **API Mock** - Endpoint configurado para testes de requisições HTTP
 
 ## 📋 Pré-requisitos
 
@@ -22,13 +22,9 @@ Esta aplicação demonstra o uso de todos os métodos HTTP (GET, POST, PUT, PATC
    npm install
    ```
 
-2. **Configurar Beeceptor:**
-   - Acesse [beeceptor.com](https://beeceptor.com)
-   - Crie um endpoint personalizado (ex: `meu-teste.free.beeceptor.com`)
-   - No arquivo `src/App.js`, substitua `your-endpoint` pela sua URL:
-     ```javascript
-     const API_BASE_URL = 'https://seu-endpoint.free.beeceptor.com';
-     ```
+2. **Configurar API:**
+   - A aplicação já está configurada com um endpoint funcional
+   - Você pode testar diretamente os métodos HTTP
 
 3. **Executar a aplicação:**
    ```bash
@@ -69,11 +65,10 @@ Esta aplicação demonstra o uso de todos os métodos HTTP (GET, POST, PUT, PATC
 
 ## 📱 Como Usar
 
-1. **Configure seu endpoint Beeceptor** seguindo as instruções na aplicação
-2. **Teste GET:** Clique em "Buscar Usuários" para ver dados mockados
-3. **Teste POST:** Preencha nome e email, clique em "Criar Usuário"
-4. **Teste PUT/PATCH:** Informe ID e novos dados, escolha atualização completa ou parcial
-5. **Teste DELETE:** Informe ID do usuário e clique em "Deletar"
+1. **Teste GET:** Clique em "Buscar Usuários" para ver dados mockados
+2. **Teste POST:** Preencha nome e email, clique em "Criar Usuário"
+3. **Teste PUT/PATCH:** Informe ID e novos dados, escolha atualização completa ou parcial
+4. **Teste DELETE:** Informe ID do usuário e clique em "Deletar"
 
 ## 🎯 Diferenças entre Fetch e Axios
 
@@ -104,14 +99,14 @@ package.json        # Dependências e scripts
 README.md          # Este arquivo
 ```
 
-## 🧪 Testando com Beeceptor
+## 🧪 Testando a API
 
-O Beeceptor permite:
-- ✅ Criar endpoints HTTP instantaneamente
-- ✅ Visualizar todas as requisições em tempo real
-- ✅ Configurar respostas personalizadas
-- ✅ Simular diferentes códigos de status
-- ✅ Adicionar delays para testar loading states
+A aplicação permite:
+- ✅ Testar todos os métodos HTTP (GET, POST, PUT, PATCH, DELETE)
+- ✅ Visualizar respostas em tempo real
+- ✅ Comparar implementações Fetch vs Axios
+- ✅ Simular diferentes cenários de uso
+- ✅ Observar estados de loading
 
 ## 📚 Conceitos Demonstrados
 
