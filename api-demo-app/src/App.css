@@ -1,0 +1,307 @@
+/* Estilos gerais da aplicação */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h1 + p {
+  text-align: center;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* Seção de instruções */
+.instructions {
+  background: #e8f4fd;
+  border: 1px solid #bee5eb;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.instructions h3 {
+  color: #0c5460;
+  margin-top: 0;
+}
+
+.instructions ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.instructions li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.instructions a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.instructions a:hover {
+  text-decoration: underline;
+}
+
+/* Indicador de carregamento */
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #007bff;
+  font-weight: bold;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin: 20px 0;
+  animation: pulse 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  from { opacity: 0.6; }
+  to { opacity: 1; }
+}
+
+/* Destaque para ID criado */
+.created-id-highlight {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Seções principais */
+.section {
+  background: #ffffff;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+  color: #495057;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* Grupos de métodos */
+.method-group {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #28a745;
+}
+
+.method-group h3 {
+  color: #343a40;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* Formulários e inputs */
+input[type="text"],
+input[type="email"] {
+  width: 200px;
+  padding: 10px;
+  margin: 5px 10px 5px 0;
+  border: 2px solid #ced4da;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+/* Botões */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 5px 10px 5px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  min-width: 160px;
+}
+
+button:hover:not(:disabled) {
+  background: #0056b3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Botões específicos por método */
+button:nth-of-type(1) { background: #28a745; } /* GET */
+button:nth-of-type(1):hover:not(:disabled) { background: #1e7e34; }
+
+button:nth-of-type(2) { background: #007bff; } /* POST */
+button:nth-of-type(2):hover:not(:disabled) { background: #0056b3; }
+
+button:nth-of-type(3) { background: #ffc107; color: #212529; } /* PUT */
+button:nth-of-type(3):hover:not(:disabled) { background: #e0a800; }
+
+button:nth-of-type(4) { background: #fd7e14; } /* PATCH */
+button:nth-of-type(4):hover:not(:disabled) { background: #e8650e; }
+
+button:nth-of-type(5) { background: #dc3545; } /* DELETE */
+button:nth-of-type(5):hover:not(:disabled) { background: #c82333; }
+
+/* Textos pequenos */
+small {
+  display: block;
+  color: #6c757d;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+/* Seção de resposta */
+.response-section {
+  background: #f8f9fa;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 30px 0;
+}
+
+.response-section h3 {
+  color: #495057;
+  margin-top: 0;
+}
+
+.response {
+  background: #2d3748;
+  color: #e2e8f0;
+  padding: 15px;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.4;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #4a5568;
+}
+
+.response-section button {
+  background: #6c757d;
+  margin-top: 10px;
+}
+
+.response-section button:hover:not(:disabled) {
+  background: #545b62;
+}
+
+/* Seção de usuários */
+.users-section {
+  background: #e8f5e8;
+  border: 2px solid #c3e6c3;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.users-section h3 {
+  color: #155724;
+  margin-top: 0;
+}
+
+.users-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.user-card {
+  background: white;
+  border: 1px solid #c3e6c3;
+  border-radius: 6px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.user-card strong {
+  color: #155724;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  .users-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Melhorias visuais */
+.section:nth-child(odd) {
+  border-left-color: #007bff;
+}
+
+.section:nth-child(even) {
+  border-left-color: #28a745;
+}
+
+.method-group:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
